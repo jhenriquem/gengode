@@ -7,7 +7,7 @@ func VerifyMessage(message string) bool {
 		fmt.Println("\n   👋 Bye, see you later! \n")
 		return false
 	} else if message == "\\help" {
-		fmt.Println("╭───────────────────────────────────────────────────────╮")
+		fmt.Println("\n╭───────────────────────────────────────────────────────╮")
 		fmt.Println("│                                                       │")
 		fmt.Println("│  🚀 I'm a tool built with  go                        │")
 		fmt.Println("│                                                       │")
@@ -15,8 +15,8 @@ func VerifyMessage(message string) bool {
 		fmt.Println("│  💡  Describe your idea and I write the code!         │")
 		fmt.Println("│                                                       │")
 		fmt.Println("│  📌 Commands                                          │")
-		fmt.Println("│    🔚  Type \\exit anytime to leave the program.      │")   // <-- Nova linha sobre sair
-		fmt.Println("│    ℹ️   Type \\help to see the documentation.          │") // <-- Nova linha sobre sair
+		fmt.Println("│    🔚  Type \\exit anytime to leave the program.       │")
+		fmt.Println("│    ℹ️   Type \\help to see the documentation.          │")
 		fmt.Println("│                                                       │")
 		fmt.Println("│  💻 Created by João Henrique                          │")
 		fmt.Println("│      Github Profile : https://github.com/jhenriquem  │")

@@ -26,6 +26,7 @@ type OpenRouterResponse struct {
 	} `json:"choices"`
 }
 
+// Function responsible for the API request, receiving the response from the AI model in relation to the prompt
 func RequestForIA(message string) (OpenRouterResponse, error) {
 	url := os.Getenv("OPENROUTER_URL")
 
