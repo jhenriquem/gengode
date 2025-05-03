@@ -16,7 +16,7 @@ func Loading(stopChan chan bool) {
 			fmt.Print("\r                          \r") // limpa a linha
 			return
 		default:
-			color.RGB(157, 124, 216).Printf("\r     Thinking %s", frames[i%len(frames)])
+			color.RGB(192, 202, 245).Printf("\r     Thinking %s", frames[i%len(frames)])
 			time.Sleep(200 * time.Millisecond)
 			i++
 		}

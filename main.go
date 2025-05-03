@@ -1,11 +1,14 @@
 package main
 
 import (
+	"gengode/internal/file"
 	"gengode/internal/gengode"
 	"gengode/internal/parser"
+	"gengode/internal/render"
 	"gengode/internal/ui"
 	"gengode/internal/utils"
 	"log"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -46,7 +49,15 @@ func main() {
 		if err != nil {
 			utils.PrintError(err.Error())
 		} else if len(result.Choices) > 0 {
-			utils.PrintResponse(result.Choices[0].Message.Content)
+			text := strings.Split(result.Choices[0].Message.Content, "\n")
+
+			err = file.CreateFile(text)
+			if err != nil {
+				utils.PrintError(err.Error())
+			}
+
+			render.MarkdownFile()
+
 		}
 	}
 }

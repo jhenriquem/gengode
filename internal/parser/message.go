@@ -1,10 +1,13 @@
 package parser
 
-import "fmt"
+import (
+	"fmt"
+	"gengode/internal/utils"
+)
 
 func VerifyMessage(message string) bool {
 	if message == "\\exit" {
-		fmt.Println("\n   👋 Bye, see you later! \n")
+		utils.ExitProgramn()
 		return false
 	} else if message == "\\help" {
 		fmt.Println("\n╭───────────────────────────────────────────────────────╮")

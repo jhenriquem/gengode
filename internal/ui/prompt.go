@@ -13,7 +13,7 @@ func Prompt() string {
 
 	var message string
 
-	color.RGB(122, 126, 247).Print("\n   󱖰  ")
+	color.RGB(122, 162, 247).Print("\n   󱖰  ")
 	message, _ = reader.ReadString('\n')
 	message = strings.TrimSpace(message)
 
