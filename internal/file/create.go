@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 )
-
+// Function responsible for creating and writing the response in the markdown file
 func CreateFile(text []string) error {
 	nameFile := "gengode_temp_response.md"
 

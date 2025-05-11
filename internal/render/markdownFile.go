@@ -6,7 +6,7 @@ import (
 
 	markdown "github.com/MichaelMure/go-term-markdown"
 )
-
+// Function responsible for rendering the temporary markdown file of the response in the terminal
 func MarkdownFile() {
 	path := "gengode_temp_response.md"
 	source, err := os.ReadFile(path)

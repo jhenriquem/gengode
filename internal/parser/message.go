@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"gengode/internal/utils"
 )
-
+// Function responsible for checking the prompt text
 func VerifyMessage(message string) bool {
 	if message == "\\exit" {
 		utils.ExitProgramn()
